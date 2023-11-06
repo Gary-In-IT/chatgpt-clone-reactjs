@@ -114,7 +114,7 @@ export default function ChatWindow() {
 
 
   return (
-    <div>
+    <div className='chatWindow'>
       {/* Display all messages */}
       {messages.map((message, index) => ( 
         <Message 
@@ -129,7 +129,7 @@ export default function ChatWindow() {
 
 
       {/* Display input */}
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='inputForm'>
           <input 
            type='text'
            value={input}

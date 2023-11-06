@@ -7,7 +7,7 @@ export default function Message({sender, text}) {
 
   return (
 
-    <div style={ {textAlign: align} }>
+    <div style={ {textAlign: align} } className='message'>
       <p>{text}</p>
     </div>
   )

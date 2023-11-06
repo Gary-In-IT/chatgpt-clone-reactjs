@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Home({startChat}) {
   return (
-    <div>
+    <div className='home'>
         <h1>Chatbot With Reactjs</h1>
         <p>Click the button and we'll start chatting!</p>
         <button onClick={startChat}>Clickity click click</button>

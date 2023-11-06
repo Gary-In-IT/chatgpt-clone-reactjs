@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 
 import Home from './components/Home'
 import ChatWindow from './components/ChatWindow';
+import './App.css'
+import ErrorBoundary from './components/ErrorBoundary';
+
 
 
 export default function App() {
@@ -15,11 +18,10 @@ export default function App() {
 
   return (
 
-    <div>
-    {/* use a ternary operator to get the ball rolling with the chatwindow, if false stay on home if true
-    open Chatwindow */}
-        
+    <div className='App'>
+      <ErrorBoundary>
         {chat? <ChatWindow /> : <Home startChat={startChat} />}
+      </ErrorBoundary>
     </div>
   )
 }
